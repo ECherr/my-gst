@@ -1,0 +1,115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+%-all	utils/makefile	/^%-all:$/;"	t
+%-audio	utils/makefile	/^%-audio:$/;"	t
+%-clean	obj/makefile	/^%-clean:$/;"	t
+%-video	utils/makefile	/^%-video:$/;"	t
+AUDIORECEIVER	include/audio.h	/^struct AUDIORECEIVER{$/;"	s
+AUDIOSENDER	include/audio.h	/^struct AUDIOSENDER{$/;"	s
+AUDIO_RECEIVER_OPUSDEC_PLC	include/audio.h	/^#define AUDIO_RECEIVER_OPUSDEC_PLC /;"	d
+AUDIO_RECEIVER_UDPSRC_CAPS	include/audio.h	/^#define AUDIO_RECEIVER_UDPSRC_CAPS /;"	d
+CFLAGS	audio/makefile	/^CFLAGS = `pkg-config --cflags --libs gstreamer-1.0`$/;"	m
+CFLAGS	main/makefile	/^CFLAGS = `pkg-config --cflags --libs gstreamer-1.0`$/;"	m
+CFLAGS	obj/makefile	/^CFLAGS = `pkg-config --cflags --libs gstreamer-1.0`$/;"	m
+CFLAGS	utils/makefile	/^CFLAGS = `pkg-config --cflags --libs gstreamer-1.0` $/;"	m
+CFLAGS	video/makefile	/^CFLAGS = `pkg-config --cflags --libs gstreamer-1.0`$/;"	m
+FLAG	include/utils.h	/^#define FLAG /;"	d
+IP_SIZE	include/utils.h	/^#define IP_SIZE	/;"	d
+MAC_SIZE	include/utils.h	/^#define MAC_SIZE	/;"	d
+TARGETS	makefile	/^TARGETS = gst$/;"	m
+VIDEORECEIVER	include/video.h	/^struct VIDEORECEIVER{$/;"	s
+VIDEOSENDER	include/video.h	/^struct VIDEOSENDER{$/;"	s
+VIDEO_RECEIVER_UDPSRC_CAPS	include/video.h	/^#define VIDEO_RECEIVER_UDPSRC_CAPS /;"	d
+__AUDIO_H__	include/audio.h	/^#define __AUDIO_H__$/;"	d
+__UTILS_H__	include/utils.h	/^#define __UTILS_H__$/;"	d
+__VIDEO_H__	include/video.h	/^#define __VIDEO_H__$/;"	d
+all	audio/makefile	/^all : audio.c$/;"	t
+all	main/makefile	/^all : main.c$/;"	t
+all	makefile	/^all:$/;"	t
+all	obj/makefile	/^all: app$/;"	t
+all	video/makefile	/^all : video.c$/;"	t
+alsasrc	include/audio.h	/^    GstElement *alsasrc;   $/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+app	obj/makefile	/^app:$/;"	t
+audio	makefile	/^audio:$/;"	t
+audioDesHost	include/utils.h	/^    char *audioDesHost;$/;"	m	struct:opts_struct	typeref:typename:char *
+audioDesPort	include/utils.h	/^    int audioDesPort;$/;"	m	struct:opts_struct	typeref:typename:int
+audioDevice	include/utils.h	/^    char *audioDevice;$/;"	m	struct:opts_struct	typeref:typename:char *
+audioReceiver	audio/audio.c	/^struct AUDIORECEIVER audioReceiver;$/;"	v	typeref:struct:AUDIORECEIVER
+audioSender	audio/audio.c	/^struct AUDIOSENDER audioSender;$/;"	v	typeref:struct:AUDIOSENDER
+audioSrcPort	include/utils.h	/^    int audioSrcPort;$/;"	m	struct:opts_struct	typeref:typename:int
+audio_init	audio/audio.c	/^int audio_init()$/;"	f	typeref:typename:int
+audio_release	audio/audio.c	/^void audio_release()$/;"	f	typeref:typename:void
+audioconvert	include/audio.h	/^	GstElement *audioconvert;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+audioconvert	include/audio.h	/^    GstElement *audioconvert;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+audiorate	include/audio.h	/^	GstElement *audiorate;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+audioresample	include/audio.h	/^	GstElement *audioresample; $/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+audioresample	include/audio.h	/^    GstElement *audioresample;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+autoaudiosink	include/audio.h	/^    GstElement *autoaudiosink;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+autovideosink	include/video.h	/^    GstElement *autovideosink;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+bus	include/audio.h	/^    GstBus *bus;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstBus *
+bus	include/audio.h	/^    GstBus *bus;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstBus *
+bus	include/video.h	/^    GstBus *bus;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstBus *
+bus	include/video.h	/^    GstBus *bus;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstBus *
+change_audio_pipeline_state	audio/audio.c	/^int change_audio_pipeline_state()$/;"	f	typeref:typename:int
+change_video_pipeline_state	video/video.c	/^int change_video_pipeline_state(const int flag)$/;"	f	typeref:typename:int
+clean	makefile	/^clean: $/;"	t
+get_local_ip	utils/utils.c	/^int get_local_ip(const char *eth_inf, char *ip)$/;"	f	typeref:typename:int
+getopts	utils/utils.c	/^void getopts(int argc, char *argv[])$/;"	f	typeref:typename:void
+handle_audio_error	audio/audio.c	/^int handle_audio_error()$/;"	f	typeref:typename:int
+handle_video_error	video/video.c	/^int handle_video_error(const int flag)$/;"	f	typeref:typename:int
+help	makefile	/^help :$/;"	t
+init	utils/utils.c	/^int init(int flag, int argc, char **argv)$/;"	f	typeref:typename:int
+jpegdec	include/video.h	/^    GstElement *jpegdec;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+jpegparse	include/video.h	/^    GstElement *jpegparse; $/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+link_elements_with_filter	video/video.c	/^link_elements_with_filter(GstElement *element1, GstElement *element2){$/;"	f	typeref:typename:gboolean	file:
+main	main/main.c	/^void main(int argc, char **argv)$/;"	f	typeref:typename:void
+message	include/audio.h	/^    GstMessage *message;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstMessage *
+message	include/audio.h	/^    GstMessage *message;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstMessage *
+message	include/video.h	/^    GstMessage *message;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstMessage *
+message	include/video.h	/^    GstMessage *message;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstMessage *
+multiudpsink	include/video.h	/^    GstElement *multiudpsink;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstElement *
+opts	utils/utils.c	/^struct opts_struct opts = {$/;"	v	typeref:struct:opts_struct
+opts_struct	include/utils.h	/^struct opts_struct{$/;"	s
+opusdec	include/audio.h	/^    GstElement *opusdec;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+opusenc	include/audio.h	/^	GstElement *opusenc;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+opusenc_caps	include/audio.h	/^	GstCaps *opusenc_caps;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstCaps *
+ownVideoPort	include/utils.h	/^	int ownVideoPort;$/;"	m	struct:opts_struct	typeref:typename:int
+pipeline	include/audio.h	/^    GstElement *pipeline;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+pipeline	include/audio.h	/^    GstElement *pipeline;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+pipeline	include/video.h	/^    GstElement *pipeline;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+pipeline	include/video.h	/^    GstElement *pipeline;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstElement *
+print_info	utils/utils.c	/^void print_info(int flag)$/;"	f	typeref:typename:void
+ret	include/audio.h	/^    GstStateChangeReturn ret;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstStateChangeReturn
+ret	include/audio.h	/^    GstStateChangeReturn ret;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstStateChangeReturn
+ret	include/video.h	/^    GstStateChangeReturn ret;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstStateChangeReturn
+ret	include/video.h	/^    GstStateChangeReturn ret;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstStateChangeReturn
+rtpjitterbuffer	include/audio.h	/^    GstElement *rtpjitterbuffer;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+rtpjpegdepay	include/video.h	/^    GstElement *rtpjpegdepay;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+rtpjpegpay	include/video.h	/^    GstElement *rtpjpegpay;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstElement *
+rtpopusdepay	include/audio.h	/^    GstElement *rtpopusdepay;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+rtpopuspay	include/audio.h	/^	GstElement *rtpopuspay;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+tutorials	makefile	/^tutorials: $/;"	t
+udpsink	include/audio.h	/^	GstElement *udpsink;$/;"	m	struct:AUDIOSENDER	typeref:typename:GstElement *
+udpsrc	include/audio.h	/^    GstElement *udpsrc;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstElement *
+udpsrc	include/video.h	/^    GstElement *udpsrc;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstElement *
+udpsrc_caps	include/audio.h	/^    GstCaps *udpsrc_caps;$/;"	m	struct:AUDIORECEIVER	typeref:typename:GstCaps *
+udpsrc_caps	include/video.h	/^    GstCaps *udpsrc_caps;$/;"	m	struct:VIDEORECEIVER	typeref:typename:GstCaps *
+usage	utils/utils.c	/^void usage()$/;"	f	typeref:typename:void
+v4l2src	include/video.h	/^    GstElement *v4l2src;;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstElement *
+v4l2src_caps	include/video.h	/^    GstCaps *v4l2src_caps;$/;"	m	struct:VIDEOSENDER	typeref:typename:GstCaps *
+video	makefile	/^video: $/;"	t
+videoDesHost	include/utils.h	/^    char *videoDesHost;$/;"	m	struct:opts_struct	typeref:typename:char *
+videoDesPort	include/utils.h	/^    int videoDesPort;$/;"	m	struct:opts_struct	typeref:typename:int
+videoDevice	include/utils.h	/^    char *videoDevice;$/;"	m	struct:opts_struct	typeref:typename:char *
+videoReceiver	video/video.c	/^struct VIDEORECEIVER videoReceiver;$/;"	v	typeref:struct:VIDEORECEIVER
+videoReceiverForOwn	video/video.c	/^struct VIDEORECEIVER videoReceiverForOwn;$/;"	v	typeref:struct:VIDEORECEIVER
+videoSender	video/video.c	/^struct VIDEOSENDER videoSender;$/;"	v	typeref:struct:VIDEOSENDER
+videoSrcPort	include/utils.h	/^    int videoSrcPort;$/;"	m	struct:opts_struct	typeref:typename:int
+video_init	video/video.c	/^int video_init(const int flag)$/;"	f	typeref:typename:int
+video_release	video/video.c	/^void video_release(const int flag)$/;"	f	typeref:typename:void
