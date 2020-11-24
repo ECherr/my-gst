@@ -47,7 +47,7 @@
 ## build APP
 
 1. change to the top of work directory
-2. enter`make`
+2. `make`
 3. choose your `make target`
 
 
